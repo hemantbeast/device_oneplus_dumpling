@@ -56,4 +56,7 @@
 
     <!-- Full screen aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Device supports multi colored battery led -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 </resources>
