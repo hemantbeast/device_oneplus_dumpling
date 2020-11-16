@@ -30,7 +30,7 @@ export DEVICE_BRINGUP_YEAR=2017
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+AICP_ROOT="$MY_DIR"/../../..
 
 function fix_goodix () {
     sed -i \
