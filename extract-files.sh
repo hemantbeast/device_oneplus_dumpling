@@ -35,7 +35,7 @@ AICP_ROOT="$MY_DIR"/../../..
 function fix_goodix () {
     sed -i \
         's|\x00goodix.fingerprint\x00|\x00fingerprint\x00\x00\x00\x00\x00\x00\x00\x00|' \
-        "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/"$1"
+        "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/"$1"
 }
 
 fix_goodix vendor/lib/hw/fingerprint.goodix.so
