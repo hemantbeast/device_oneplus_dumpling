@@ -44,4 +44,7 @@
 
     <!-- Does the device multi color battery LED? -->
     <bool name="config_multiColorBatteryLed">true</bool>
+
+    <!-- Does device support ringtone focus functionality -->
+    <bool name="config_deviceRingtoneFocusMode">true</bool>
 </resources>
