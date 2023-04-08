@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Ricedroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_dumpling
@@ -21,6 +21,15 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := ONEPLUS A5010
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Gapps
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_GAPPS_ARCH := arm64
+
+# Rice stuff
+SUSHI_BOOTANIMATION := 1080
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_SYSTEM_DEVICE := OnePlus5T
 PRODUCT_SYSTEM_NAME := OnePlus5T
